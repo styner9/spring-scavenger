@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+        xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.styner9</groupId>
+        <artifactId>spring-scavenger-demo-build</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../spring-scavenger-demo-build</relativePath>
+    </parent>
+
+    <artifactId>spring-scavenger-context-demo</artifactId>
+
+    <name>Spring Scavenger Context [Demo]</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.styner9</groupId>
+            <artifactId>spring-scavenger-context</artifactId>
+        </dependency>
+    </dependencies>
+</project>

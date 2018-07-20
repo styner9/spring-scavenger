@@ -1,0 +1,4 @@
+spring-scavenger.context.deploy-phase:
+  candidates: dev,test,prod
+  default: dev
+  fail-on-missing: true
