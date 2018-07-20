@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.styner9</groupId>
+        <artifactId>jvm-family-kotlin</artifactId>
+        <version>0.0.5</version>
+    </parent>
+
+    <artifactId>spring-scavenger-build</artifactId>
+    <version>0.0.1</version>
+    <packaging>pom</packaging>
+
+    <name>Spring Scavenger Build</name>
+    <url>https://github.com/styner9/spring-scavenger</url>
+
+    <properties>
+        <bintray.package>spring-scavenger</bintray.package>
+        <kotlin.version>1.2.51</kotlin.version>
+
+        <spring-boot.version>2.0.3.RELEASE</spring-boot.version>
+        <kotlin-logging.version>1.5.4</kotlin-logging.version>
+    </properties>
+
+    <modules>
+        <module>spring-scavenger-context</module>
+        <module>spring-scavenger-context-demo</module>
+        <module>spring-scavenger-demo-build</module>
+        <module>spring-scavenger-test</module>
+        <module>spring-scavenger-test-demo</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.styner9</groupId>
+                <artifactId>spring-scavenger-context</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.styner9</groupId>
+                <artifactId>spring-scavenger-test</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib-jdk8</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.microutils</groupId>
+            <artifactId>kotlin-logging</artifactId>
+            <version>${kotlin-logging.version}</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>bintray-styner9-utils</id>
+            <url>https://dl.bintray.com/styner9/utils</url>
+        </repository>
+    </repositories>
+</project>

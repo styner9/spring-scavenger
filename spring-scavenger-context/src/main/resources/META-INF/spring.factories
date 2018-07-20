@@ -1,0 +1,2 @@
+org.springframework.context.ApplicationContextInitializer=\
+com.github.styner9.spring.scavenger.context.DeployPhaseInitializer
