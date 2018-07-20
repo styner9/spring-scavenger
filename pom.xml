@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>spring-scavenger-build</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <packaging>pom</packaging>
 
     <name>Spring Scavenger Build</name>
@@ -45,12 +45,12 @@
             <dependency>
                 <groupId>com.github.styner9</groupId>
                 <artifactId>spring-scavenger-context</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
+                <version>0.0.1</version>
             </dependency>
             <dependency>
                 <groupId>com.github.styner9</groupId>
                 <artifactId>spring-scavenger-test</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
+                <version>0.0.1</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
